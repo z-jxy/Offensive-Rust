@@ -1,0 +1,17 @@
+cargo-features = ["strip"]
+[package]
+name = "rusty"
+version = "0.1.0"
+edition = "2022"
+author = "zjxy"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[profile.release]
+strip = "symbols"
+panic = "abort"
+trim-path = true
+opt-level = "z"
+lto = true
+
+[dependencies]
