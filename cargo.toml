@@ -1,9 +1,9 @@
 cargo-features = ["strip"]
 [workspace]
 members = [
-  linux-Execute_Shellcode,
-  windows-Basic_Enum,
-  windows-Memory_Buffer,
+  "linux-Execute_Shellcode",
+  "windows-Basic_Enum",
+  "windows-Memory_Buffer",
 ]
 
 [profile.release]
